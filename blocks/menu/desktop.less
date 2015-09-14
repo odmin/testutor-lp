@@ -1,0 +1,45 @@
+@import '../_framework/var';
+.menu{
+	display: block;
+	width: 100%;
+	color: @color-elements-text;
+	
+	&__item{
+		
+		.reset-a;
+		
+		min-width: 90px;
+		margin-right: 25px;
+		padding: 2px 10px;
+		
+		border-radius: @radius;
+		
+		background: @color-elements-bg;
+		
+		transition: color .25s ease;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			color: @color-elements-action;
+		}
+	}
+
+	&_top{
+		padding-bottom: @indent;
+		text-align: center;
+	}
+
+	&_strong{
+		.menu__item{
+			background: @color-elements-bg-strong;
+		}
+	}
+
+	&_footer{
+		padding-bottom: @indent*.5;
+	}
+
+}

@@ -1,0 +1,23 @@
+@import '../_framework/var';
+.generate-grid(@n, @i: 1) when (@i =< @n) {
+	.grid_@{n}{
+		.grid__item_@{i} {
+			box-sizing: border-box;
+			width: (@i * 100% / @n);
+		}
+	}
+	.generate-grid(@n, (@i + 1));
+}
+.grid{
+	float: left;
+	width: 100%;
+	&__item{
+		float: left;
+	}
+}
+.generate-grid(4);
+.generate-grid(3);
+
+.grid-cb{
+	clear: both;
+}

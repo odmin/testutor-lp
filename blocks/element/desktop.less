@@ -1,0 +1,63 @@
+@import '../_framework/var';
+.element{
+	display: block;
+	width: 96%;
+	margin: 0 2%;
+	
+	&__img{
+		display: inline-block;
+		width: 100%;
+		border: none;
+		border-radius: @radius;
+	}
+
+	&__title{
+		.reset-h;
+		font-size: 1.1em;
+		line-height: 1.5;
+		padding: @indent/2 0;
+	}
+
+	&__fade{
+		display: none;
+		position: absolute;
+		z-index: 11;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.4);
+		align-items: center;
+		justify-content: center;
+		border-radius: @radius;
+
+		// icon
+		color: @color-elements-bg;
+		font-size: 150px;
+		border: 10px solid @color-elements-bg;
+	}
+
+	&__figure{
+		margin-bottom: @indent/2;
+		display: block;
+		position: relative;
+		z-index: 1;
+		&:hover{
+			.element__fade{
+				display: flex;
+			}
+		}
+	}
+
+}
+.no-flexbox{
+	.element{
+		&__figure{
+			&:hover{
+				.element__fade{
+					display: flex;
+				}
+			}
+		}
+	}
+}

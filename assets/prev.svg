@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="_ielts-ru" sketch:type="MSArtboardGroup" transform="translate(-134.000000, -1604.000000)" fill="#333333">
+            <g id="reviews" sketch:type="MSLayerGroup" transform="translate(112.000000, 1421.000000)">
+                <g id="prev" transform="translate(0.000000, 156.000000)" sketch:type="MSShapeGroup">
+                    <path d="M44.9610504,33.45343 L25.5469245,33.45343 L30.1794182,28.7865216 C30.5852541,28.377939 30.5852541,27.7151405 30.1794182,27.3066183 C29.7735823,26.8977939 29.1156288,26.8977939 28.7103929,27.3066183 L22.304377,33.7599275 C21.898541,34.1685101 21.898541,34.831369 22.304377,35.2398308 L28.7103929,41.6934421 C28.9132509,41.8979148 29.1791082,42 29.4449056,42 C29.7107029,42 29.9765602,41.8979148 30.1794182,41.6934421 C30.5852541,41.2848595 30.5852541,40.622061 30.1794182,40.2135993 L25.5469245,35.5464491 L44.9610504,35.5464491 C45.5347647,35.5464491 46,35.0778483 46,34.4999093 C46,33.9219704 45.5348247,33.45343 44.9610504,33.45343 L44.9610504,33.45343 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

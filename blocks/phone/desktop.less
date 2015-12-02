@@ -1,0 +1,23 @@
+@import '../_framework/var';
+.phone{
+  display: inline-block;
+  margin-right: 35px;
+  &__icon{
+    width:16px;
+    height:16px;
+    background: url('@{img}phone.svg') no-repeat center center;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &__text{
+    & ,
+    & > a{
+      display: inline-block;
+      .RobotoSlab-Light;
+      font-size:14px;
+      color:#FFFFFF;
+      line-height:19px;
+      text-align:left;
+    }
+  }
+}

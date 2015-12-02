@@ -1,0 +1,42 @@
+@import '../_framework/var';
+.button{
+  display: inline-block;
+  position: relative;
+  .RobotoSlab-Bold;
+  font-size:14px;
+  color:@color-elements-text;
+  line-height:19px;
+  text-align:center;
+  text-decoration: none;
+  border: 1px solid @color-elements-text;
+  border-radius:3px;
+  padding: 7px 40px;
+
+  &__price{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+    width: 75px;
+    border-left: 1px #ccc solid;
+    border-left: 1px rgba(0,0,0,0.10) solid;
+  }
+
+  &_yellow{
+    background: @color-yellow;
+    color: @color-elements-action;
+    border-color: @color-yellow;
+    padding: 15px 105px 15px 30px;
+  }
+
+  &_deepskyblue{
+
+    border:1px solid @color-deepskyblue;
+    border-radius:3px;
+    padding: 15px 40px;
+    color: @color-elements-headers;
+
+  }
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>lessons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="_ielts-ru" sketch:type="MSArtboardGroup" transform="translate(-145.000000, -1091.000000)" fill="#6C7A89">
+            <g id="tutors" sketch:type="MSLayerGroup" transform="translate(0.000000, 600.000000)">
+                <g id="1" transform="translate(113.000000, 177.000000)" sketch:type="MSShapeGroup">
+                    <path d="M32,314 L44,314 L44,330 L38,326 L32,330 L32,314 Z M34,316 L42,316 L42,326 L38,323 L34,326 L34,316 Z M36,318 L40,318 L40,320 L36,320 L36,318 Z" id="lessons"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

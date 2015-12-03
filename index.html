@@ -160,21 +160,36 @@
 				<div class="hgroup hgroup_section">
 					<h2 class="hgroup__title hgroup__title_h2">ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h2>
 				</div>
-				<div class="reply flex flex_middle flex_vertical">
+				<div class="reply flex flex_middle flex_vertical carousel slide" data-ride="carousel" id="carousel">
 					<div class="reply__nav">
-						<span class="reply__arrow reply__arrow_prev"></span>
+						<a class="reply__arrow reply__arrow_prev" href="#carousel" data-slide="prev"></a>
 					</div>
 					<div class="reply__block">
-						&laquo;За&nbsp;время обучения, я&nbsp;считаю, что получила объемное количество знаний и&nbsp;хороший словарный запас. Конечно, тяжело было учить по&nbsp;200 слов в&nbsp;неделю, но&nbsp;это только по&nbsp;тому, что у&nbsp;меня сжатые сроки. Большое спасибо за&nbsp;все TESTutor. Все было превосходно.&raquo;
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="reply__text">
+									&laquo;За&nbsp;время обучения, я&nbsp;считаю, что получила объемное количество знаний и&nbsp;хороший словарный запас. Конечно, тяжело было учить по&nbsp;200 слов в&nbsp;неделю, но&nbsp;это только по&nbsp;тому, что у&nbsp;меня сжатые сроки. Большое спасибо за&nbsp;все TESTutor. Все было превосходно.&raquo;
+								</div>
+								<div class="reply__desc">
+									<img src="http://beerhold.it/68/68" alt="" class="reply__image">
+									<p class="reply__author">Скарлетт Йоханссон</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="reply__text">
+									&laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&raquo;
+								</div>
+								<div class="reply__desc">
+									<img src="http://babeholder.pixoil.com/img/68/68" alt="" class="reply__image">
+									<p class="reply__author">Моника Беллучи</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="reply__nav">
-						<span class="reply__arrow reply__arrow_next"></span>
+						<a class="reply__arrow reply__arrow_next" href="#carousel" data-slide="next"></a>
 					</div>
 					<div class="grid-cb"></div>
-				</div>
-				<div class="reply">
-					<img src="http://placekitten.com/g/68/68" alt="" class="reply__image">
-					<p class="reply__author">Скарлетт Йоханссон</p>
 				</div>
 			</div>
 		</section>
@@ -204,22 +219,28 @@
 								<div class="form-area">
 									<p class="form-area__title">Количество уроков:</p>
 									<form action="#" class="form-form">
-										<input required type="radio" id="quan1" name="quan" value="" placeholder="" class="form-form__hidden">
+										<input required type="radio" id="quan1" name="quan" value="" placeholder="" class="form-form__hidden form-form__logic_money">
 										<label for="quan1" class="form-form__loglbl form-form__radio form-form__radio_start">12</label>
-										<input required type="radio" id="quan2" name="quan" value="" placeholder="" class="form-form__hidden">
+										<input required type="radio" id="quan2" name="quan" value="" placeholder="" class="form-form__hidden form-form__logic_money">
 										<label for="quan2" class="form-form__loglbl form-form__radio">24</label>
-										<input required type="radio" id="quan3" name="quan" value="" placeholder="" class="form-form__hidden">
+										<input required type="radio" id="quan3" name="quan" value="" placeholder="" class="form-form__hidden form-form__logic_money">
 										<label for="quan3" class="form-form__loglbl form-form__radio">36</label>
-										<input required type="radio" id="quan4" name="quan" value="" placeholder="" class="form-form__hidden">
+										<input required type="radio" id="quan4" name="quan" value="" placeholder="" class="form-form__hidden form-form__logic_money">
 										<label for="quan4" class="form-form__loglbl form-form__radio">48</label>
-										<input required type="radio" id="quan5" name="quan" value="" placeholder="" class="form-form__hidden">
+										<input required type="radio" id="quan5" name="quan" value="" placeholder="" class="form-form__hidden form-form__logic_money">
 										<label for="quan5" class="form-form__loglbl form-form__radio form-form__radio_end">60</label>
-										<div class="bonus">
+										<div class="bonus bonus_3" for="quan3">
 											Получи 3 урока бесплатно!
 										</div>
+										<div class="bonus bonus_4" for="quan4">
+											Получи 4 урока бесплатно!
+										</div>
+										<div class="bonus bonus_5" for="quan5">
+											Получи 5 уроков бесплатно!
+										</div>
 										<p class="form-form__total">
-											Итого: 
-											<strong class="form-form__money"><span class="total">56 250</span><span class="rouble">P</span></strong> 
+											Итого:
+											<strong class="form-form__money"><span class="total">56 250</span><span class="rouble">P</span></strong>
 											за 48 занятий
 										</p>
 										<input type="submit" value="Выбрать" class="button button_submit">
@@ -353,7 +374,7 @@
 						<span class="copyright__icon icon icon-visa"></span>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="grid-cb"></div>
 		</div>

@@ -45,6 +45,7 @@ module.exports = function(grunt) {
 			main: {
 				src: [
 					'node_modules/bootstrap/js/carousel.js',
+					'<%= path_frontend %>**/*.js',
 				],
 				dest: 'assets/bundle.js',
 			},

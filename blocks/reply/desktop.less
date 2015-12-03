@@ -1,39 +1,50 @@
 @import '../_framework/var';
 .reply{
-	
+
 	text-align: center;
 
 	&__nav{
-		
+
 		width: 17.5%;
 		float: left;
+		margin-top: -10%;
 
 	}
 
 	&__block{
-		
+
 		float: left;
 		width: 65%;
-		padding: 40px 40px 50px 40px;
 		background:#FFFFFF;
-		border: 1px solid rgba(0,0,0,0.10);
 		border-radius:3px;
 		.RobotoSlab-Light;
 		font-size:16px;
 		color: @color-elements-text-grey;
 		line-height:24px;
-		
+
+	}
+
+	&__text{
+
+		border: 1px solid rgba(0,0,0,0.10);
+		padding: 40px 40px 50px 40px;
+
 	}
 
 	&__image{
-		
+
 		border-radius: 50%;
+
+	}
+
+	&__desc{
+
 		margin-top: -34px;
 
 	}
 
 	&__author{
-		
+
 		.RobotoSlab-Bold;
 		font-size:16px;
 		color:@color-elements-headers;
@@ -44,7 +55,7 @@
 	}
 
 	&__arrow{
-		
+
 		width: 68px;
 		height: 68px;
 		border-radius: 50%;
@@ -65,11 +76,11 @@
 	&_form{
 
 		.reply__block{
-			
+
 			padding: 0;
 			margin: auto;
 			border:6px solid @color-yellow;
-			
+
 		}
 	}
 

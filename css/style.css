@@ -118,7 +118,7 @@
   padding: 7px 33px;
   min-width: 260px;
   position: relative;
-  display: inline-block;
+  display: none;
   border: 1px solid #FFE26E;
   border-radius: 10px;
   margin-top: 10px;
@@ -245,6 +245,13 @@
   min-width: 213px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.carousel .item {
+  display: none;
+}
+.carousel .item.active {
+  display: block;
 }
 
 .RobotoSlab-Light {
@@ -926,15 +933,22 @@
   margin: 0;
   padding: 0;
   min-height: 100%;
+  min-width: 1140px;
   padding-bottom: 200px;
   font-size: 1em;
   background: url('../assets/header-bg-2.jpg') no-repeat top center;
   background-size: contain;
 }
+@media screen and (max-width: 1139px) {
+  .page__body {
+    background-size: inherit;
+  }
+}
 .page__footer {
   margin: 0;
   padding: 0;
   height: 200px;
+  min-width: 1140px;
   margin-top: -200px;
   padding: 60px 0 60px;
   font-size: 1em;
@@ -959,6 +973,7 @@ html {
 }
 .page-section {
   padding: 80px 0;
+  min-width: 1140px;
 }
 .page-section_blue {
   background: #E8F7FE;
@@ -1043,13 +1058,12 @@ html {
 .reply__nav {
   width: 17.5%;
   float: left;
+  margin-top: -10%;
 }
 .reply__block {
   float: left;
   width: 65%;
-  padding: 40px 40px 50px 40px;
   background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -1057,8 +1071,14 @@ html {
   color: #6C7A89;
   line-height: 24px;
 }
+.reply__text {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 40px 50px 40px;
+}
 .reply__image {
   border-radius: 50%;
+}
+.reply__desc {
   margin-top: -34px;
 }
 .reply__author {

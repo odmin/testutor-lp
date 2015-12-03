@@ -21,10 +21,16 @@
 
 		.no-indent;
 		min-height: 100%;
+		min-width: @site-width;
 		padding-bottom: @footer;
 		font-size: 1em;
 		background: url('@{img}header-bg-2.jpg') no-repeat top center;
 		background-size: contain;
+
+		@media screen and (max-width: 1139px){
+			background-size: inherit;
+
+		}
 
 	}
 
@@ -32,6 +38,7 @@
 
 		.no-indent;
 		height: @footer;
+		min-width: @site-width;
 		margin-top: -@footer;
 		padding: @indent*3 0 @indent*3;
 
@@ -69,6 +76,7 @@ html{
 
 .page-section{
 	padding: 80px 0;
+	min-width: @site-width;
 	&_blue{
 		background: @color-elements-bg-blue;
 	}

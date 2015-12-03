@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		path_frontend: 'blocks/',
 		path_build_css: 'css/',
+		path_bootstrap: 'node_modules/bootstrap/',
 		// tasks
 		less: {
 			mainDev: {
@@ -37,6 +38,17 @@ module.exports = function(grunt) {
 				dest: '<%= path_build_css %>style.min.css',
 			},
 		},
+		concat: {
+			options: {
+				separator: ';',
+			},
+			main: {
+				src: [
+					'node_modules/bootstrap/js/carousel.js',
+				],
+				dest: 'assets/bundle.js',
+			},
+		},
 		watch: {
 			options: {
 				atBegin: true,
@@ -49,11 +61,19 @@ module.exports = function(grunt) {
 					spawn: false,
 				},
 			},
+			js: {
+				files: '<%= path_frontend %>**/*.js',
+				tasks: ['concat:main'],
+				options: {
+					spawn: false,
+				},
+			}
 		},
 	});
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.registerTask('build', ['less:mainProd', 'autoprefixer:mainProd']);
 };

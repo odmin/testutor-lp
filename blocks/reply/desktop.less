@@ -1,0 +1,76 @@
+@import '../_framework/var';
+.reply{
+	
+	text-align: center;
+
+	&__nav{
+		
+		width: 17.5%;
+		float: left;
+
+	}
+
+	&__block{
+		
+		float: left;
+		width: 65%;
+		padding: 40px 40px 50px 40px;
+		background:#FFFFFF;
+		border: 1px solid rgba(0,0,0,0.10);
+		border-radius:3px;
+		.RobotoSlab-Light;
+		font-size:16px;
+		color: @color-elements-text-grey;
+		line-height:24px;
+		
+	}
+
+	&__image{
+		
+		border-radius: 50%;
+		margin-top: -34px;
+
+	}
+
+	&__author{
+		
+		.RobotoSlab-Bold;
+		font-size:16px;
+		color:@color-elements-headers;
+		line-height:22px;
+		text-align:center;
+		margin: 15px 0;
+
+	}
+
+	&__arrow{
+		
+		width: 68px;
+		height: 68px;
+		border-radius: 50%;
+		display: inline-block;
+		cursor: pointer;
+
+		&_prev{
+			background: @color-elements-bg-blue url('@{img}prev.svg')no-repeat center center;
+		}
+
+		&_next{
+			background: @color-elements-bg-blue url('@{img}next.svg')no-repeat center center;
+		}
+
+
+	}
+
+	&_form{
+
+		.reply__block{
+			
+			padding: 0;
+			margin: auto;
+			border:6px solid @color-yellow;
+			
+		}
+	}
+
+}

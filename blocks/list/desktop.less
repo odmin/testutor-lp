@@ -1,0 +1,36 @@
+@import '../_framework/var';
+.list{
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	.RobotoSlab-Light;
+	font-size:14px;
+	color:@color-elements-text-grey;
+	line-height:19px;
+	text-align:left;
+
+	&__item{
+		
+		padding: 10px 0;
+
+	}
+
+	&_checked{
+		margin-top: 30px;
+		.list__item{
+			
+			&:before{
+				content: "";
+				display: inline-block;
+				margin-right: 10px;
+				width: 14px;
+				height: 14px;
+				vertical-align: baseline;
+				background: url('@{img}check.svg') no-repeat center center;
+			}
+
+		}
+
+	}
+}

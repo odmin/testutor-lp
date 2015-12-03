@@ -1,45 +1,92 @@
 @import '../_framework/var';
 .menu{
-	display: block;
-	width: 100%;
-	color: @color-elements-text;
 	
 	&__item{
 		
-		.reset-a;
-		
-		min-width: 90px;
-		margin-right: 25px;
-		padding: 2px 10px;
-		
-		border-radius: @radius;
-		
-		background: @color-elements-bg;
-		
-		transition: color .25s ease;
-		
-		&:last-child{
-			margin-right: 0;
-		}
 
-		&:hover{
-			color: @color-elements-action;
-		}
+
 	}
 
-	&_top{
-		padding-bottom: @indent;
-		text-align: center;
-	}
+	&_bottom{
+		
+		padding-bottom: 40px;
 
-	&_strong{
 		.menu__item{
-			background: @color-elements-bg-strong;
+			
+			.RobotoSlab-Regular;
+			font-size:16px;
+			color:#FFFFFF;
+			line-height:22px;
+			text-decoration: none;
+			padding-right: 22px;
+			
+			&:hover{
+				
+				text-decoration: underline;
+
+			}
+
+			&:last-child{
+				
+				padding-right: 0;
+
+			}
+
 		}
+
 	}
 
-	&_footer{
-		padding-bottom: @indent*.5;
+	&_social{
+		float: right;
+		.menu__item{
+			
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-right: 15px;
+			border-radius: 50%;
+			border: 2px solid @color-elements-text;
+			text-align: center;
+			
+			img{
+				
+				vertical-align: middle;
+				vertical-align: -webkit-baseline-middle;
+				border: none;
+			
+			}
+			
+			&:last-child{
+				margin-top: 0;
+			}
+
+		}
+
+	}
+
+	&_lang{
+		float: right;
+		.menu__item{
+
+			margin-left: 20px;
+			display: inline-block;
+			.RobotoSlab-Light;
+			font-size:14px;
+			color:rgba(255,255,255,0.40);
+			line-height:19px;
+			text-decoration: none;
+			
+			&.active{
+				color: @color-elements-text;
+				cursor: default;
+			}
+			
+			&:first-child{
+				margin-left: 0;
+			}
+		
+		}
+
 	}
 
 }

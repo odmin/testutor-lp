@@ -1,0 +1,126 @@
+@import '../_framework/var';
+.form{
+	&-tablet{
+		
+		padding: 50px 5px 50px 50px;
+		text-align: left;
+		
+		&__price{
+			
+			.RobotoSlab-Bold;
+			font-size:36px;
+			color: @color-elements-headers;
+			line-height:49px;
+			text-align:left;
+			font-weight:700;
+			display: inline-block;
+			border-bottom: 2px solid @color-yellow;
+			margin-right: 10px;
+
+		}
+
+		&__title{
+			
+			.RobotoSlab-Regular;
+			font-size:16px;
+			color: @color-elements-headers;
+			line-height:22px;
+			text-align:left;
+			display: inline-block;
+
+		}
+	}
+	&-area{
+
+		text-align: center;
+		padding: 50px 50px 50px 30px;
+		border-left: 1px solid @color-yellow;
+		
+		&__title{
+			
+			.RobotoSlab-Bold;
+			font-size:14px;
+			color:@color-elements-headers;
+			line-height:19px;
+			
+			&:before{
+				
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				width: 12px;
+				height: 16px;
+				background: url('@{img}flag.svg') no-repeat center center;
+				margin-right: 10px;
+			}
+
+		}
+	}
+
+	&-form{
+		
+		&__radio{
+			
+			display: inline-block;
+			vertical-align: middle;
+			border-left: none;
+			margin-left: -5px;
+			height:30px;
+			padding: 4px 15px;
+
+			.RobotoSlab-Regular;
+			font-size:14px;
+			color:@color-elements-text-grey;
+			line-height:19px;
+			text-align:center;
+			cursor: pointer;
+			
+			border:1px solid #D6D9D9;
+			
+			&_start{
+				border-radius: 15px 0 0 15px;
+				border-left:1px solid #D9D9D9;
+				padding-left: 20px;
+			}
+			&_end{
+				border-radius: 0 15px 15px 0;
+				padding-right: 20px;
+			}
+
+		}
+
+		&__hidden{
+			display: none;
+			
+			// logic
+			
+			&:checked{
+				
+				+.form-form__loglbl{
+					background: @color-yellow;
+					border-color: @color-yellow;
+					color: @color-elements-headers;
+				}
+
+			}
+		}
+
+		&__total{
+			
+			.RobotoSlab-Light;
+			font-size:14px;
+			color:@color-elements-text-grey;
+			line-height:19px;
+
+		}
+
+		&__money{
+			
+			.RobotoSlab-Regular;
+			font-size:20px;
+			color:@color-elements-headers;
+			line-height:27px;
+
+		}
+	}
+}
